@@ -16,6 +16,7 @@ public class Guess {
         Scanner sc = new Scanner(System.in);
             
         System.out.println("Guess the number between 0 and 100");
+        System.out.println("(For ease of testing, the number is " + number + ")");
         int guess = sc.nextInt();
                     
         while (count < 10){
@@ -29,6 +30,7 @@ public class Guess {
                     count = 0;
                     number = random.nextInt(101);
                     System.out.println("Guess the number between 0 and 100");
+                    System.out.println("(For ease of testing, the number is " + number + ")");
                     count ++;
                     guess = sc.nextInt();
                 } else if (answer.equals("N")){
